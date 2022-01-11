@@ -135,3 +135,41 @@ $ npm test
 [phantomjs #0-0]
 [phantomjs #0-0] 8 passing (5s)
 [phantomjs #0-0]
+
+#Code test after writing test for third requirement
+$ npm test
+
+> cake-bar-js@0.0.0 test /home/ccuser/workspace/why-test-project-2
+> bin/wdio-test
+
+------------------------------------------------------------------
+[phantomjs #0-0] Session ID: 098e7da0-72d0-11ec-a63c-2b999c541e16
+[phantomjs #0-0] Spec: /home/ccuser/workspace/why-test-project-2/test/features/user-visits-index-test.js
+[phantomjs #0-0] Running: phantomjs
+[phantomjs #0-0]
+[phantomjs #0-0] User visits index
+[phantomjs #0-0]
+[phantomjs #0-0] to post an order
+[phantomjs #0-0]   ✓ starts with a blank order
+[phantomjs #0-0]   ✓ does not provide options outside of working hours
+[phantomjs #0-0]   ✓ displays the selected hour
+[phantomjs #0-0]   1) labels the pick up hour correctly
+[phantomjs #0-0]   ✓ accepts the customer name
+[phantomjs #0-0]   ✓ accepts the cake type
+[phantomjs #0-0]   ✓ accepts multiple fillings
+[phantomjs #0-0]   ✓ accepts the stack size
+[phantomjs #0-0]
+[phantomjs #0-0] to clear an order
+[phantomjs #0-0]   ✓ deletes the selected options
+[phantomjs #0-0]
+[phantomjs #0-0]
+[phantomjs #0-0] 8 passing (5s)
+[phantomjs #0-0] 1 failing
+[phantomjs #0-0]
+[phantomjs #0-0] 1) to post an order labels the pick up hour correctly:
+[phantomjs #0-0] expected 'drop off time: ' to include 'pick up time:'
+[phantomjs #0-0] AssertionError: expected 'drop off time: ' to include 'pick up time:'
+[phantomjs #0-0]     at Context.it (/home/ccuser/workspace/why-test-project-2/test/features/user-visits-index-test.js:58:14)
+[phantomjs #0-0]
+
+npm ERR! Test failed.  See above for more details.
