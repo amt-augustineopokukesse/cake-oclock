@@ -35,7 +35,17 @@ describe('User visits index', () => {
       });
 
     // Add the 'displays the selected hour' test here
-    
+    it('displays the selected hour', () => {
+        const hour = '9:00';
+   
+        browser.url('/');
+        browser.selectByVisibleText('#select-pickUp', hour);
+        browser.click('#submit-order');
+        browser.url('/');
+   
+        assert.include(browser.getText('#pickUp'), hour);
+      });
+   
     
     // Add the 'labels the pick up hour' test here
 
