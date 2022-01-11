@@ -41,3 +41,31 @@ $ npm test
 [phantomjs #0-0]
 
 npm ERR! Test failed.  See above for more details.
+
+#Code test after removing error 
+$ npm test
+
+> cake-bar-js@0.0.0 test /home/ccuser/workspace/why-test-project-2
+> bin/wdio-test
+
+------------------------------------------------------------------
+[phantomjs #0-0] Session ID: 664f0af0-72c6-11ec-a40e-953beee8c2e6
+[phantomjs #0-0] Spec: /home/ccuser/workspace/why-test-project-2/test/features/user-visits-index-test.js
+[phantomjs #0-0] Running: phantomjs
+[phantomjs #0-0]
+[phantomjs #0-0] User visits index
+[phantomjs #0-0]
+[phantomjs #0-0] to post an order
+[phantomjs #0-0]   ✓ starts with a blank order
+[phantomjs #0-0]   ✓ does not provide options outside of working hours
+[phantomjs #0-0]   ✓ accepts the customer name
+[phantomjs #0-0]   ✓ accepts the cake type
+[phantomjs #0-0]   ✓ accepts multiple fillings
+[phantomjs #0-0]   ✓ accepts the stack size
+[phantomjs #0-0]
+[phantomjs #0-0] to clear an order
+[phantomjs #0-0]   ✓ deletes the selected options
+[phantomjs #0-0]
+[phantomjs #0-0]
+[phantomjs #0-0] 7 passing (4s)
+[phantomjs #0-0]
